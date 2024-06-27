@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA Fitness</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <style>
+        /* CSS reset */
+      body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+            padding: 0px ;
+            background: url('img/backgroundpic.jpg');
+        }
+        .left{
+            position: absolute;
+            left: 60px;
+            top: 44px;
+            display: inline-block;
+            color: aliceblue;
+        
+        }
+        .left img{
+            width:  111px;
+            margin: -16px;
+        }
+        .left div{
+            text-align: center;
+            line-height: 0;
+            font-size: 14px;
+        }
+        .left div:hover{
+            color: goldenrod;
+            cursor: pointer;
+        }
+
+        .mid{
+            display: block;
+            width: 35%;
+            margin: 12px auto;
+            top: 20px;
+            color: aliceblue;
+        
+
+        }
+        .right{
+            position: absolute;
+            right: 35px;
+            top: 20px;
+            display: inline-block;
+            color: aliceblue;
+        
+        }
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li{
+            font-size: 17px;
+            display: inline-block;
+        }
+        .navbar li a{
+            
+            padding: 34px 23px ;
+            color: white;
+            text-decoration: none;
+        }
+        .navbar li a:hover ,.navbar li a.active{
+            
+         text-decoration: underline;
+         color: goldenrod;
+        }
+        .btn{
+            margin:0px 9px;
+            color: white;
+            background-color: black;
+            padding: 4px 14px;
+            border: 2px solid goldenrod;
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: rgb(43, 43, 43);
+        }
+        .container{
+            
+            color: white;
+            border-radius: 12px;
+            padding: 71px 45px;
+            margin: 102px 97px;
+            width: 33%;
+        }
+        .fromgroup input{
+            font-family: cursive;
+            font-size: 15px;
+            text-align: center;
+            border-radius: 8px;
+            display: block;
+            padding: 8px 114px;
+            width: 26%;
+            margin: 7px auto;
+            border: 3px solid rgb(217, 203, 169);
+        }
+        .container h1{
+            text-align: center;
+        }
+        .container button{
+             display: block;
+             width: 23%;
+             margin: 15px auto;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+         <img src="img/Logogym.png" alt="" id="logo">
+         <div>Aura Fitness</div>
+        </div>
+        <!-- mid box for navigation bar  -->
+        <div class="mid">
+        <ul class="navbar">
+              <li> <a href="#" class="active">Home</a> </li>
+              <li> <a href="#">About us</a> </li>
+              <li> <a href="#">Appointment</a> </li>
+            <li> <a href="#">Contact us</a> </li>
+        </ul>
+        </div>
+        <!-- right box for button -->
+        <div class="right">
+        <button class="btn">Call us now </button>
+        <button class="btn">Email us </button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Fill up and join</h1>
+        <form action="noaction.php"></form>
+        <div class="fromgroup">
+            <input type="text" name="" placeholder="Enter your Name">
+        </div>
+        <div class="fromgroup">
+            <input type="text" name="" placeholder="Enter your Number">
+        </div>   
+        <div class="fromgroup">
+            <input type="text" name="" placeholder="Enter your Email">
+        </div>   
+        <div class="fromgroup">
+            <input type="text" name="" placeholder="Enter your Address">
+        </div>
+        <button class="btn">Submit</button>
+    </div>
+        
+</body>
+</html>
